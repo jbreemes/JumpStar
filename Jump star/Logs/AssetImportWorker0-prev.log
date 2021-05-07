@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19041.867; Version 2004; 64bit' Language: 'en' Physical Memory: 16326 MB
+OS: 'Windows 10 Home; OS build 19041.928; Version 2004; 64bit' Language: 'en' Physical Memory: 16326 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ C:/Users/jozua/Documents/GitHub/Jumpstar/Jump star
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51942
+62307
 Successfully changed project path to: C:/Users/jozua/Documents/GitHub/Jumpstar/Jump star
 C:/Users/jozua/Documents/GitHub/Jumpstar/Jump star
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 38.90 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 39.67 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -35,65 +35,80 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56196
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56664
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002212 seconds.
+Registered in 0.002145 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 40.47 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 44.00 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.024 seconds
+- Completed reload, in  1.006 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000956 seconds.
+Registered in 0.000966 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 46.39 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 47.84 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.950 seconds
+- Completed reload, in  0.926 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1825 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 88.4 MB.
 System memory in use after: 88.4 MB.
 
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2276.
-Total: 2.552600 ms (FindLiveObjects: 0.385800 ms CreateObjectMapping: 0.092000 ms MarkObjects: 1.949000 ms  DeleteObjects: 0.123700 ms)
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2278.
+Total: 1.728000 ms (FindLiveObjects: 0.196600 ms CreateObjectMapping: 0.073700 ms MarkObjects: 1.366200 ms  DeleteObjects: 0.090400 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Imports/Pictures
-  artifactKey: Guid(736cd12ae0b25b346a41338053b51874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Pictures using Guid(736cd12ae0b25b346a41338053b51874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f619ad006d941cbdf634ee5de49bb21e') in 0.009660 seconds
-  Import took 0.013890 seconds .
+  path: Assets/Scenes/Startscreen.unity
+  artifactKey: Guid(163b93f57bbb38c4a832533b1721056a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Startscreen.unity using Guid(163b93f57bbb38c4a832533b1721056a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e817c7fa343db5e18ea9a9d9a38370ac') in 0.011261 seconds
+  Import took 0.014433 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 670.459178 seconds.
-  path: Assets/Imports/Pixel Fantasy Caves/props2.png
-  artifactKey: Guid(527d271e3ba3f9843ba89bf17ea61f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Pixel Fantasy Caves/props2.png using Guid(527d271e3ba3f9843ba89bf17ea61f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '835880c1776d8ebcdf58e5ccdd6d6a9a') in 0.113745 seconds
-  Import took 0.118459 seconds .
+  Time since last request: 18.130699 seconds.
+  path: Assets/Scenes/World.unity
+  artifactKey: Guid(83067b00790e8ce42a4df5a57d09cdd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/World.unity using Guid(83067b00790e8ce42a4df5a57d09cdd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b37f8dcf90c3d7e1c950c1c8e5463ad4') in 0.006133 seconds
+  Import took 0.009023 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 4.874896 seconds.
-  path: Assets/Imports/Pixel Fantasy Caves/props2.png
-  artifactKey: Guid(527d271e3ba3f9843ba89bf17ea61f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Pixel Fantasy Caves/props2.png using Guid(527d271e3ba3f9843ba89bf17ea61f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deebe4ba8b584bb2bc1579ef4097020c') in 0.081355 seconds
-  Import took 0.084366 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001102 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.770 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1804 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.9 MB.
+System memory in use after: 87.0 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2282.
+Total: 1.966800 ms (FindLiveObjects: 0.172800 ms CreateObjectMapping: 0.074100 ms MarkObjects: 1.634600 ms  DeleteObjects: 0.083900 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
