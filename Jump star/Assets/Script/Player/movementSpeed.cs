@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class movementSpeed : MonoBehaviour
 {
-    private float speed = 5f;
+      
 
+    private float speed = 5f;
+    
     private Rigidbody2D ry2D;
     private bool isGrounded;
-    public Transform feetPos;
-    public float checkRadius;
+    public  Transform feetPos;
+    public static float checkRadius =0.3f;
     public LayerMask Ground;
 
-    public float jumpValue = 4f;
+    public float jumpValue = 3f;
     private float jumpCounter;
     public float jumpTime;
     private bool isJumping;
