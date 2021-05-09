@@ -14,7 +14,7 @@ public class movementSpeed : MonoBehaviour
     public static float checkRadius =0.3f;
     public LayerMask Ground;
 
-    public float jumpValue = 3f;
+    public float jumpValue = 0.3f;
     private float jumpCounter;
     public float jumpTime;
     private bool isJumping;

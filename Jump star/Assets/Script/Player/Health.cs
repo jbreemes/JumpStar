@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
 
 
@@ -19,16 +20,20 @@ public class Health : MonoBehaviour
     private bool Damage;
     public LayerMask spikes;
 
-   
+
+    private void Awake()
+    {
+        Application.targetFrameRate = 60;
+        
+    }
 
 
-
-  
     private void Update()
     {   
+
         Radius = movementSpeed.checkRadius;
 
-        StartCoroutine(Damagecounter());
+        
 
 
 
@@ -50,33 +55,38 @@ public class Health : MonoBehaviour
                 hearts[i].enabled = false;
             }
 
-                  
+            
 
+        } 
 
+       
 
-        }
+                
+    }
 
-          
-        
-        IEnumerator Damagecounter()
-           {
-            yield return new WaitForSeconds(Random.Range(4, 8));
+    private void FixedUpdate()
+    {
+        StartCoroutine(Damagecounter());
+    }
 
-            Damage = Physics2D.OverlapCircle(feet.position, Radius, spikes);
-            if (Damage == true ){
+    IEnumerator Damagecounter()
+    {
+          yield return new WaitForSeconds(6);
+            
+            
 
+          Damage = Physics2D.OverlapCircle(feet.position, Radius, spikes);
+          if (Damage == true)
+          {
             health--;
-            }
-
-           }
-
-    
-        
-
+          }
 
     }
 
    
+
+
+
 }
 
 
