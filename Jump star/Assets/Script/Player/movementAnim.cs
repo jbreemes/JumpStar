@@ -10,9 +10,7 @@ public class movementAnim : MonoBehaviour
     public Transform feetPos;
     public static float Radius;
     public LayerMask Ground;
-
-
-
+   
     void Start()
     {
         anim = GetComponent<Animator>();

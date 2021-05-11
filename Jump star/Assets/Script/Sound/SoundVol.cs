@@ -1,25 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SoundVol : MonoBehaviour
 {
+    
+
+    
     public AudioSource Audio;
-    private void Awake()
+    private float musicVolume = 0.2f;
+    
+
+    public void start()
     {
-        DontDestroyOnLoad(transform.gameObject);
-        Audio = GetComponent<AudioSource>();
+        Audio.Play();
+        gameObject.GetComponent<StartScreen>();
+        
+
     }
 
-    public void PlayMusic()
+    void Update()
     {
-        if (Audio.isPlaying) return;
+        Audio.volume = musicVolume;
+
     }
 
-    public void StopMusic()
+    public void VolumeMixer(float vol)
     {
-        Audio.Stop();
+
+        musicVolume = vol;
+
     }
+
+
+
+   
+     
 
 
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,5 +15,10 @@ public class StartScreen : MonoBehaviour
     void Update()
     {
         
+    }
+
+    internal static void FindObjectsOfTypeAll(GameObject p)
+    {
+        throw new NotImplementedException();
     }
 }

@@ -7,7 +7,7 @@ public class PauseScreen : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
-    public GameObject SoundOption;
+    
 
     // Update is called once per frame
     void Update()
@@ -27,12 +27,23 @@ public class PauseScreen : MonoBehaviour
             }
             
         }
+
+
+        if (Input.GetKey(KeyCode.A) && GameIsPaused == false)
+        {
+            transform.localScale = new Vector2(-0.3146253f, 0.286523f);
+        }
+        else if (Input.GetKey(KeyCode.D)&& GameIsPaused == false)
+        {
+            transform.localScale = new Vector2(0.3146253f, 0.286523f);
+        }
+
     }
 
    public void Resume()
     {
         pauseMenuUI.SetActive(false);
-        SoundOption.SetActive(false);
+        
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
@@ -44,19 +55,12 @@ public class PauseScreen : MonoBehaviour
         GameIsPaused = true;
 
     }
-    public void LoadMenu()
-    {
-        
-        pauseMenuUI.SetActive(false);
-        SoundOption.SetActive(true);
-        GameIsPaused = true;
-
-    }
+    
     public void Back()
     {
         Time.timeScale = 0f;
         pauseMenuUI.SetActive(true);
-        SoundOption.SetActive(false);
+        
         GameIsPaused = true;
     }
 
@@ -64,10 +68,6 @@ public class PauseScreen : MonoBehaviour
     {
         SceneManager.LoadScene("Startscreen");
         Time.timeScale = 1f;
-        pauseMenuUI.SetActive(false);
-        SoundOption.SetActive(false);
-
     }
-
 
 }
