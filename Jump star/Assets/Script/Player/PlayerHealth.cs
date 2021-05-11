@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public float health;
     public int numOfHearts;
-    public float dps = 0.8f;
+    public float dps = 2f;
 
     public Image[] hearts;
     public Sprite FullHP;
@@ -22,14 +22,7 @@ public class PlayerHealth : MonoBehaviour
     public LayerMask spikes;
     public GameObject restart;
 
-
-    private void Awake()
-    {
-        Application.targetFrameRate = 60;
-
-    }
-
-
+   
     private void Update()
     {
 
