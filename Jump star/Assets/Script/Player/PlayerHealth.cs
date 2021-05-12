@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
 
         Radius = movementSpeed.checkRadius;
 
-
+        //loop for the hearts
         for (int i = 0; i < hearts.Length; i++)
         {
             if (i < health)
@@ -40,6 +40,7 @@ public class PlayerHealth : MonoBehaviour
                 hearts[i].sprite = EmptyHP;
             }
 
+            //enables the full hp or empty hp images 
             if (i < numOfHearts)
             {
                 hearts[i].enabled = true;
@@ -59,7 +60,7 @@ public class PlayerHealth : MonoBehaviour
             
 
         }
-
+        // checks if the player dies to start the restart screen
            if(health < 0)
            {
             Restart();

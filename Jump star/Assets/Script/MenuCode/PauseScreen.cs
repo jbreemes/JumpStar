@@ -9,9 +9,10 @@ public class PauseScreen : MonoBehaviour
     public GameObject pauseMenuUI;
     
 
-    // Update is called once per frame
+    
     void Update()
     {
+        // pauses the game and check if the game is paused
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (GameIsPaused)
@@ -29,17 +30,9 @@ public class PauseScreen : MonoBehaviour
         }
 
 
-        if (Input.GetKey(KeyCode.A) && GameIsPaused == false)
-        {
-            transform.localScale = new Vector2(-0.3146253f, 0.286523f);
-        }
-        else if (Input.GetKey(KeyCode.D)&& GameIsPaused == false)
-        {
-            transform.localScale = new Vector2(0.3146253f, 0.286523f);
-        }
-
     }
 
+    // for the pausemenu to resume the game
    public void Resume()
     {
         pauseMenuUI.SetActive(false);
@@ -48,6 +41,7 @@ public class PauseScreen : MonoBehaviour
         GameIsPaused = false;
     }
 
+    //pauses the game
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
@@ -56,6 +50,7 @@ public class PauseScreen : MonoBehaviour
 
     }
     
+    //to resume the game
     public void Back()
     {
         Time.timeScale = 0f;
@@ -64,6 +59,7 @@ public class PauseScreen : MonoBehaviour
         GameIsPaused = true;
     }
 
+    // quit to startscreen
     public void Quit()
     {
         SceneManager.LoadScene("Startscreen");

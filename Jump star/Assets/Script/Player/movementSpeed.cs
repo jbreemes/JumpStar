@@ -40,7 +40,7 @@ public class movementSpeed : MonoBehaviour
     private void Update()
     {
 
-        
+        // checks if the player is touching the ground so that the player can jump
             isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius,Ground);
         if (isGrounded == true && Input.GetKeyDown(KeyCode.Space)){
             isJumping = true;
@@ -48,6 +48,7 @@ public class movementSpeed : MonoBehaviour
             ry2D.velocity = Vector2.up * jumpValue;
         }
 
+        // checks if the player is touching the end objective
         isEnd = Physics2D.OverlapCircle(feetPos.position, checkRadius, end);
         if (isEnd == true)
         {
@@ -56,7 +57,7 @@ public class movementSpeed : MonoBehaviour
 
         }
         
-        
+        // the jumping
         if (Input.GetKey(KeyCode.Space) && isJumping == true)
         {
             if(jumpCounter > 0)
@@ -72,7 +73,7 @@ public class movementSpeed : MonoBehaviour
             }
          
         }
-
+        // rotates the playermodel
           if (Input.GetKey(KeyCode.A) )
             {
                 transform.localScale = new Vector2(-0.3146253f, 0.286523f);

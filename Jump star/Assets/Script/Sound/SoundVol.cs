@@ -12,7 +12,7 @@ public class SoundVol : MonoBehaviour
     public AudioSource Audio;
     private float musicVolume = 0.2f;
     
-
+    // for volume mixer
     public void start()
     {
         Audio.Play();

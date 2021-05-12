@@ -5,7 +5,7 @@ using UnityEngine.Audio;
 
 public class Soundscene : MonoBehaviour {
 
-
+    // makes it so that music keeps playing thru the scenes
     private static Soundscene musicmanager;
    
     public void Awake()

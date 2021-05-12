@@ -20,11 +20,12 @@ public class movementAnim : MonoBehaviour
    
     void Update()
     {
+
          Radius = movementSpeed.checkRadius;
          float horizontalMove = Input.GetAxisRaw("Horizontal")* speed;
-        isGrounded = Physics2D.OverlapCircle(feetPos.position, Radius, Ground);
+         isGrounded = Physics2D.OverlapCircle(feetPos.position, Radius, Ground);
 
-
+        //anim for running left to right
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)){
             anim.SetBool("isRunning", true);
         }
@@ -33,12 +34,13 @@ public class movementAnim : MonoBehaviour
             anim.SetBool("isRunning", false);
         }
 
+        // for jumping anim
         if (Input.GetKey(KeyCode.Space))
         {
             anim.SetTrigger("isJumping");
 
         }
-
+        // checks if the player is grounded
         if (isGrounded == true)
         {
             anim.SetBool("isGrounded", true);
